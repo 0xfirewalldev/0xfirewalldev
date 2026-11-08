@@ -6,7 +6,7 @@
   <a href="https://irikefekesiena.vercel.app"><b>Portfolio</b></a> •
   <a href="https://irikefekesiena.vercel.app/contact"><b>Contact</b></a> •
   <a href="https://x.com/DevTech_Coder23"><b>X</b></a> •
-  <a href="https://github.com/DevTechMike-Coder?tab=repositories"><b>All repositories</b></a>
+  <a href="https://github.com/0xfirewalldev?tab=repositories"><b>All repositories</b></a>
 </p>
 
 > **Availability:** <!-- TODO: pick one and delete the rest -->
@@ -26,38 +26,38 @@
 
 ## Featured Projects
 
-### [Vertex Canvas](https://github.com/DevTechMike-Coder/KanbanTool)
+### [Vertex Canvas](https://github.com/0xfirewalldev/KanbanTool)
 Real-time kanban workspace with notifications, team management, and file storage.
 
 <!-- TODO: add screenshot/GIF + live demo link -->
 <!-- ![Vertex Canvas](./docs/vertex-demo.gif) -->
-[Live demo](https://vertexcanvas.vercel.app/) · [Threat model](https://github.com/DevTechMike-Coder/KanbanTool/blob/main/docs/threat-model.md) · [SECURITY.md](https://github.com/DevTechMike-Coder/KanbanTool/blob/main/SECURITY.md)
+[Live demo](https://vertexcanvas.vercel.app/) · [Threat model](https://github.com/0xfirewalldev/KanbanTool/blob/main/docs/threat-model.md) · [SECURITY.md](https://github.com/0xfirewalldev/KanbanTool/blob/main/SECURITY.md)
 
-[![CodeQL](https://github.com/DevTechMike-Coder/KanbanTool/actions/workflows/codeql.yml/badge.svg)](https://github.com/DevTechMike-Coder/KanbanTool/actions/workflows/codeql.yml)
-[![CI](https://github.com/DevTechMike-Coder/KanbanTool/actions/workflows/ci.yml/badge.svg)](https://github.com/DevTechMike-Coder/KanbanTool/actions/workflows/ci.yml)
+[![CodeQL](https://github.com/0xfirewalldev/KanbanTool/actions/workflows/codeql.yml/badge.svg)](https://github.com/0xfirewalldev/KanbanTool/actions/workflows/codeql.yml)
+[![CI](https://github.com/0xfirewalldev/KanbanTool/actions/workflows/ci.yml/badge.svg)](https://github.com/0xfirewalldev/KanbanTool/actions/workflows/ci.yml)
 
 **Security controls (each links to the implementation):**
 
 | Control | Implementation | Evidence |
 |---|---|---|
-| Authentication | Supabase Auth; Google/GitHub via OAuth 2.0 + PKCE (S256) | [`lib/auth/oauth.ts`](https://github.com/DevTechMike-Coder/KanbanTool/blob/main/lib/auth/oauth.ts) |
-| Sessions | HMAC-SHA256 signed cookies, Edge-verifiable. Expiry/revocation limits documented in the threat model | [`lib/auth/session.ts`](https://github.com/DevTechMike-Coder/KanbanTool/blob/main/lib/auth/session.ts) |
-| Authorization (IDOR/BOLA) | Resource → project → team membership check on every task/project server action | [`app/actions/tasks.ts`](https://github.com/DevTechMike-Coder/KanbanTool/blob/main/app/actions/tasks.ts) · authz regression tests <!-- TODO link --> |
-| File uploads | Extension allowlist, magic-byte validation, 20 MB cap, per-user object path | [`app/api/upload/route.ts`](https://github.com/DevTechMike-Coder/KanbanTool/blob/main/app/api/upload/route.ts) |
-| Rate limiting | Redis (`ioredis`) → PostgreSQL atomic upsert → in-memory fallback, per-IP on auth actions | [`lib/auth/rate-limit.ts`](https://github.com/DevTechMike-Coder/KanbanTool/blob/main/lib/auth/rate-limit.ts) |
-| Security headers | HSTS, `X-Frame-Options: DENY`, `nosniff`, Referrer-Policy, CSP (nonce-based CSP on the roadmap) | [`next.config.ts`](https://github.com/DevTechMike-Coder/KanbanTool/blob/main/next.config.ts) |
+| Authentication | Supabase Auth; Google/GitHub via OAuth 2.0 + PKCE (S256) | [`lib/auth/oauth.ts`](https://github.com/0xfirewalldev/KanbanTool/blob/main/lib/auth/oauth.ts) |
+| Sessions | HMAC-SHA256 signed cookies, Edge-verifiable. Expiry/revocation limits documented in the threat model | [`lib/auth/session.ts`](https://github.com/0xfirewalldev/KanbanTool/blob/main/lib/auth/session.ts) |
+| Authorization (IDOR/BOLA) | Resource → project → team membership check on every task/project server action | [`app/actions/tasks.ts`](https://github.com/0xfirewalldev/KanbanTool/blob/main/app/actions/tasks.ts) · authz regression tests <!-- TODO link --> |
+| File uploads | Extension allowlist, magic-byte validation, 20 MB cap, per-user object path | [`app/api/upload/route.ts`](https://github.com/0xfirewalldev/KanbanTool/blob/main/app/api/upload/route.ts) |
+| Rate limiting | Redis (`ioredis`) → PostgreSQL atomic upsert → in-memory fallback, per-IP on auth actions | [`lib/auth/rate-limit.ts`](https://github.com/0xfirewalldev/KanbanTool/blob/main/lib/auth/rate-limit.ts) |
+| Security headers | HSTS, `X-Frame-Options: DENY`, `nosniff`, Referrer-Policy, CSP (nonce-based CSP on the roadmap) | [`next.config.ts`](https://github.com/0xfirewalldev/KanbanTool/blob/main/next.config.ts) |
 
 `nextjs` `typescript` `prisma` `postgresql` `supabase` `tailwindcss` `oauth-pkce` `idor-protection`
 
 ---
 
-### [VulnTrack Lite](https://github.com/DevTechMike-Coder/VulnTrack-Lite)
+### [VulnTrack Lite](https://github.com/0xfirewalldev/VulnTrack-Lite)
 Vulnerability management and analysis engine: track, filter, and score findings across software ecosystems.
 
 <!-- TODO: add screenshot + live demo link -->
-[Live demo](#) · [SECURITY.md](https://github.com/DevTechMike-Coder/VulnTrack-Lite/blob/main/SECURITY.md)
+[Live demo](#) · [SECURITY.md](https://github.com/0xfirewalldev/VulnTrack-Lite/blob/main/SECURITY.md)
 
-[![CodeQL](https://github.com/DevTechMike-Coder/VulnTrack-Lite/actions/workflows/codeql.yml/badge.svg)](https://github.com/DevTechMike-Coder/VulnTrack-Lite/actions/workflows/codeql.yml)
+[![CodeQL](https://github.com/0xfirewalldev/VulnTrack-Lite/actions/workflows/codeql.yml/badge.svg)](https://github.com/0xfirewalldev/VulnTrack-Lite/actions/workflows/codeql.yml)
 
 - CVSS score (0.0–10.0) and severity stored per CVE; severity is currently entered, not derived from the score
 - Pydantic-validated API, parameterized SQLite queries, HTML-escaped rendering. Local single-user tool: see the threat model before exposing it
@@ -92,7 +92,7 @@ Dynamic catalog, responsive cart, editorial layout.
 
 - **Outcomes:** Lighthouse <!-- TODO: Perf/A11y/SEO/BP scores --> · <!-- TODO: load-time or feature results -->
 - **Testimonial:** <!-- TODO: quote + attribution, or remove -->
-- [Live site](https://eaatelier.vercel.app/) · [Repository](https://github.com/DevTechMike-Coder/E-A_Atelier)
+- [Live site](https://eaatelier.vercel.app/) · [Repository](https://github.com/0xfirewalldev/E-A_Atelier)
 - `nextjs` `react` `typescript` `tailwindcss`
 
 <!-- TODO: add a second project, or keep heading as "Selected Client Work" -->
@@ -128,7 +128,7 @@ AI tools accelerate prototyping and debugging. All generated code is reviewed by
 
 ## Collaboration
 
-Interested in: full-stack apps with complex authorization or real-time needs; API security research and vulnerability tooling; security reviews of open-source React/Next.js and Python projects. Use the [contact form](https://micahkesiena.vercel.app/#contact).
+Interested in: full-stack apps with complex authorization or real-time needs; API security research and vulnerability tooling; security reviews of open-source React/Next.js and Python projects. Use the [contact form](https://irikefekesiena.vercel.app/contact).
 
 <p align="center">
   <i>© 2026 Kesiena Micah Irikefe</i>
