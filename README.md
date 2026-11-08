@@ -3,15 +3,15 @@
 **Full-stack developer and application security engineer. I build Next.js/TypeScript systems with enforced authorization boundaries, then break them the way an attacker would.**
 
 <p align="left">
-  <a href="https://micahkesiena.vercel.app"><b>Portfolio</b></a> •
-  <a href="https://micahkesiena.vercel.app/#contact"><b>Contact</b></a> •
+  <a href="https://irikefekesiena.vercel.app"><b>Portfolio</b></a> •
+  <a href="https://irikefekesiena.vercel.app/contact"><b>Contact</b></a> •
   <a href="https://x.com/DevTech_Coder23"><b>X</b></a> •
   <a href="https://github.com/DevTechMike-Coder?tab=repositories"><b>All repositories</b></a>
 </p>
 
 > **Availability:** <!-- TODO: pick one and delete the rest -->
 > Open to freelance full-stack builds, security-focused code reviews, and scoped web/API penetration tests (written authorization required).
-> Also considering full-time roles in AppSec / full-stack. Reach me through the [contact form](https://micahkesiena.vercel.app/#contact).
+> Also considering full-time roles in AppSec / full-stack. Reach me through the [contact](https://irikefekesiena.vercel.app/contact).
 
 ---
 
